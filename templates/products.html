@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products | RollieKart</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+  <h1>RollieKart</h1>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="nav-menu">
+    <a href="/">Home</a>
+<a href="/products">Products</a>
+<a href="/contact">Contact</a>
+  </nav>
+</header>
+
+
+  <main class="products">
+    <h2>Our Best Picks</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="assets/product1.jpg" alt="Product 1" />
+        <h3>Smart Watch</h3>
+        <p>৳1,999</p>
+      </div>
+      <div class="product-card">
+        <img src="assets/product2.jpg" alt="Product 2" />
+        <h3>Wireless Earbuds</h3>
+        <p>৳2,599</p>
+      </div>
+      <!-- Add 4–6 more dummy products -->
+    </div>
+  </main>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <footer>© 2025 RollieKart. All rights reserved.</footer>
+</body>
+</html>

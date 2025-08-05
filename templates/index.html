@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RollieKart | Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+  <h1>RollieKart</h1>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <nav id="nav-menu">
+    <a href="/">Home</a>
+<a href="/products">Products</a>
+<a href="/contact">Contact</a>
+  </nav>
+</header>
+
+
+  <main class="hero">
+    <h2>Welcome to the Future of Shopping</h2>
+    <p>Experience customer service powered by AI, test and explore!</p>
+    <a href="/products" class="cta">Explore Products</a>
+  </main>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <footer>© 2025 RollieKart. All rights reserved.</footer>
+</body>
+</html>
